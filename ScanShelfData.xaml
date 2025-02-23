@@ -1,0 +1,206 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ScanShelfData" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ScanShelfData_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:SmartShelf_AuditBot;assembly=DataService.SmartShelf_AuditBot" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>SmartShelf_AuditBot</x:String>
+      <x:String>UiPath.DataService.Definition</x:String>
+      <x:String>UiPath.DataService.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>Microsoft.Office.Interop.Word</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>DataService.SmartShelf_AuditBot</AssemblyReference>
+      <AssemblyReference>UiPath.DataService.Definition</AssemblyReference>
+      <AssemblyReference>UiPath.DataService.Activities.Core</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>Microsoft.Office.Interop.Word</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ScanShelfData" sap:VirtualizedContainerService.HintSize="1079.2,3590" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="This workflow will extract data from the Audit Log and ensure that:&#xA;ProductID is numeric (not GUID).&#xA;ScannedStockLevel is extracted properly.&#xA;Data is written to AuditLog.csv.&#xA;" DisplayName="Sequence SmartShelf_AuditBot" sap:VirtualizedContainerService.HintSize="504,3567" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="scg:IList(s:AuditLog)" Name="listAuditLogs" />
+        <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable()]" Name="dtScannedData" />
+        <Variable x:TypeArguments="s:AuditLog" Name="currentAuditLog" />
+        <Variable x:TypeArguments="x:String" Name="extractedProductID">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String" Value="" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:Int32" Name="extractedScannedStock" />
+        <Variable x:TypeArguments="scg:IList(s:Product)" Name="listProducts" />
+        <Variable x:TypeArguments="x:String" Name="extractedAuditDate" />
+        <Variable x:TypeArguments="x:Int32" Name="ScannedStockLevel" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uda:QueryEntityRecords x:TypeArguments="s:AuditLog" FilterArguments="{x:Null}" FilterValues="{x:Null}" TotalRecords="{x:Null}" sap2010:Annotation.AnnotationText="Fetching Audit Log Data Correctly" ContinueOnError="False" DisplayName="Query Entity Records - AuditLogs" EntityId="5face4fb-dde5-ef11-90cb-002248a1377f" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="470,203" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[listAuditLogs]" QueriedEntityId="5face4fb-dde5-ef11-90cb-002248a1377f" Skip="0" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="100">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uda:QueryEntityRecords>
+      <ui:LogMessage sap2010:Annotation.AnnotationText="Check if Entities Load Correctly" DisplayName="Log Message - Audit Logs" sap:VirtualizedContainerService.HintSize="470,204" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Total Audit Log records retrieved: &quot; &amp; listAuditLogs.Count.ToString()]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <Assign DisplayName="Assign - Initilize Data in dtScanned" sap:VirtualizedContainerService.HintSize="470,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign.To>
+          <OutArgument x:TypeArguments="sd:DataTable">[dtScannedData]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable()]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="AuditLog" DataTable="[dtScannedData]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="470,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+      <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="ProductID" DataTable="[dtScannedData]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="470,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
+      <ui:AddDataColumn x:TypeArguments="x:Int32" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="ScannedStockLevel" DataTable="[dtScannedData]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="470,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_8" />
+      <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="AuditDate" DataTable="[dtScannedData]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="470,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_6" />
+      <ui:ForEach x:TypeArguments="s:AuditLog" CurrentIndex="{x:Null}" DisplayName="For Each currentAuditLog" sap:VirtualizedContainerService.HintSize="470,1606" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[listAuditLogs]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="s:AuditLog">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:AuditLog" Name="currentAuditLog" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,1476" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Checking Audit Log ID: &quot; &amp; currentAuditLog.AuditID &amp; &#xA;&quot; | Raw ProductID Object: &quot; &amp; If(currentAuditLog.ProductID IsNot Nothing, currentAuditLog.ProductID.ToString(), &quot;NULL&quot;) &amp; &#xA;&quot; | Extracted Numeric ProductID: &quot; &amp; If(currentAuditLog.ProductID IsNot Nothing AndAlso currentAuditLog.ProductID.ProductID IsNot Nothing, currentAuditLog.ProductID.ProductID.ToString(), &quot;MISSING_ID&quot;)]" />
+              <Assign DisplayName="Assign - Extracting ProductID" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[extractedProductID]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[If(currentAuditLog.ProductID IsNot Nothing AndAlso currentAuditLog.ProductID.ProductID IsNot Nothing, currentAuditLog.ProductID.ProductID.ToString(), "MISSING_ID")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message - Extracted ProductID" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Extracted ProductID: &quot; &amp; extractedProductID]" />
+              <Assign DisplayName="Assign - Extracting ScannedStock" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[extractedScannedStock]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[If(currentAuditLog.ScannedStockLevel IsNot Nothing, CInt(currentAuditLog.ScannedStockLevel), 0)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message Extracted Scanned Stock" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Extracted ScannedStockLevel: &quot; &amp; extractedScannedStock.ToString()]" />
+              <Assign DisplayName="Assign - Extracting Audit Date" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[extractedAuditDate]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[If(currentAuditLog.AuditDate IsNot Nothing, currentAuditLog.AuditDate.ToString(), "UNKNOWN_DATE")]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message - Extracted Audit Date" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Extracted AuditDate: &quot; &amp; extractedAuditDate]" />
+              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {currentAuditLog.AuditID, extractedProductID, extractedScannedStock, extractedAuditDate}]" DataTable="[dtScannedData]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Row added to dtScannedData | AuditLogID: &quot; &amp; currentAuditLog.AuditID &amp; &#xA;&quot; | ProductID: &quot; &amp; extractedProductID &amp; &#xA;&quot; | ScannedStockLevel: &quot; &amp; extractedScannedStock &amp; &#xA;&quot; | AuditDate: &quot; &amp; extractedAuditDate]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+      <ui:AppendWriteCsvFile PathResource="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[dtScannedData]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" FilePath="Data\AuditLog.csv" sap:VirtualizedContainerService.HintSize="470,234" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" ShouldQuote="True" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="470,164" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Scan Shelf Data successfully written to AuditLog.csv&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>
